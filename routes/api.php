@@ -15,10 +15,11 @@ Route::group(['middleware' => ['jwt.verify']], function () {
     Route::get('/usuarios/{id}', 'App\Http\Controllers\UsuariosController@indexId');  // mostrar datosUsuarios x id
     Route::put('/usuarios/{id}', 'App\http\Controllers\UsuariosController@update');  // update datosUsuarios
     Route::delete('/usuarios/{id}', 'App\Http\Controllers\UsuariosController@destroy');  // delete datosUsuarios
-
-    Route::post('/proyectos', 'App\Http\Controllers\ProyectoController@store'); //create datosProyectos  
-    Route::get('/proyectos', 'App\Http\Controllers\ProyectoController@index');  // mostrar datosProyectos
-    Route::put('/proyectos/{id}', 'App\http\Controllers\ProyectoController@update');  // update Proyectos
-    Route::delete('/proyectos/{id}', 'App\Http\Controllers\ProyectosController@destroy');  // delete datosProyectos
     */
+
+    Route::post('/etiqueta', 'App\Http\Controllers\EtiquetaController@store'); //create etiquetas  
+    Route::get('/etiqueta', 'App\Http\Controllers\EtiquetaController@index');  // mostrar etiquetas
+    Route::put('/etiqueta/{id}', 'App\http\Controllers\EtiquetaController@update');  // update etiqueta
+    Route::delete('/etiqueta/{id}', 'App\Http\Controllers\EtiquetaController@destroy');  // delete etiqueta
+    
 });
