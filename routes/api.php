@@ -19,7 +19,7 @@ Route::group(['middleware' => ['jwt.verify']], function () {
 
     Route::post('/etiqueta', 'App\Http\Controllers\EtiquetaController@store'); //create etiquetas  
     Route::get('/etiqueta', 'App\Http\Controllers\EtiquetaController@index');  // mostrar etiquetas
-    Route::put('/etiqueta/{id}', 'App\http\Controllers\EtiquetaController@update');  // update etiqueta
+    Route::put('/etiqueta/{id}', 'App\Http\Controllers\EtiquetaController@update');  // update etiqueta
     Route::delete('/etiqueta/{id}', 'App\Http\Controllers\EtiquetaController@destroy');  // delete etiqueta
     
 });
